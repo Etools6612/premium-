@@ -4699,7 +4699,7 @@ def auto_share():
                 with lock:
                     shared_count += 1
                     success_list.append(response.json().get('id'))
-                print(f'{green} SUCCESSFULLY {red}SHARED {shared_count} {orange} ⪼ {white} {share_count}')
+                print(f'{green} SUCCESSFULLY {red}SHARED {shared_count} {green} ⪼ {white} {share_count}')
                 if shared_count == share_count:
                     print('{green}FINISHED SHARING POSTS.')
                     if success_list:
@@ -5107,3 +5107,4 @@ if __name__ == "__main__":
         curses.endwin()
 
         print("Error:", e)
+
