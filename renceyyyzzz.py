@@ -4904,7 +4904,7 @@ def show_overview():
     print(f"""
      {yellow}ACCOUNT STORAGE OVERVIEW [ STATUS ] 
      {DD}╔════════════════════════════════════════════╗\033[0m
-     {DD}║   {yellow}FRA ACCOUNT{yellow} : {green}{total_accounts}4569                         {DD} ║
+     {DD}║   {yellow}FRA ACCOUNT{yellow} : {green}{total_accounts}                         {DD} ║
     {DD} ║   {yellow}FRA PAGES  {yellow} : {green}{total_pages}                         {DD} ║
    {DD}  ║   {yellow}RPW ACCOUNT{yellow} : {green}{total_account_rpw}                      {DD}    ║
      {DD}║   {yellow}RPW PAGES  {yellow} : {green}{total_pages_rpw}                       {DD}   ║
@@ -5173,4 +5173,5 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         curses.endwin()
+
         print("Error:", e)
